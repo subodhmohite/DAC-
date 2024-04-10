@@ -1,0 +1,25 @@
+delimiter //
+create procedure updateemp(eid int,esal float(9,2),ejob varchar(20))
+begin
+update emp
+set sal=esal,job=ejob
+where empno=eid;
+end//
+delimiter ;
+call updateemp(7902,6257,'qa');
+
+
+delimiter $$
+create procedure fijob(eid int,out esal float(9,2),out ecomm float(9,2))
+begin
+select sal,comm into esal,ecomm
+from emp
+where empno=eid;
+end $$
+
+delimiter ..
+create procedure insertempl(eid int,enm varchar(20),ejob varchar(20),emg int,edate date,esal float(9,2),ecomm float(9,2),edeptno int)
+begin
+insert into emp values(eid,enm,ejob,emg,edate,esal,ecomm,edeptno);
+end ..
+delimiter ;
