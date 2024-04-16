@@ -1,11 +1,7 @@
-243098_subodh mohite
-dac
-iacsd
+243098_Subodh Mohite
+Dac
+Iacsd
 
-<<<<<<< HEAD
-243052_swapnil more
-dac
-iacsd
-=======
-....
->>>>>>> 342931011b01153515e0152650651b58038a7ee6
+243052_Swapnil More
+Dac
+Iacsd
